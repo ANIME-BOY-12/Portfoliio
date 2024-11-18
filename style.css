@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Geist Mono", monospace;
+}
+/* @keyframes appear{ */
+    /* from{
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+        
+    }
+}
+@keyframes appear2{
+    from{
+        opacity: 0;
+        clip-path: inset(0 0 0 100%);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+        
+    }
+} */
+
+@keyframes appear1{
+    from{
+        opacity: 0;
+        scale: 0.2;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes appear2{
+    from{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+}
+#skill1{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#education{
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#project1{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+#project2{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+#project3{
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
