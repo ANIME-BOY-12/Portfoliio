@@ -4,10 +4,6 @@ const texts =[
 const text2 =[
   "Skills"
 ]
-const text3 =[
-  "EDUCATION"
-]
-
 const textElement = document.getElementById("work");
 let charIndex = 0;
 function typeWritter(){
@@ -39,20 +35,3 @@ function typeWritter1(){
   }
 }
 typeWritter1()
-
-
-const edu = document.getElementById("edu");
-let charIndex3 = 0;
-function typeWritter3(){
-  if(charIndex<texts[0].length){
-    edu.innerHTML = edu.innerHTML + text3[0].charAt(charIndex3);
-    charIndex3++;
-    setTimeout(typeWritter3,200);
-  }
-  else{
-    edu.innerHTML = " "
-    charIndex3 =0;
-    setTimeout(typeWritter3,50);
-  }
-}
-typeWritter3();
